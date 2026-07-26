@@ -25,7 +25,7 @@
     .required::after{content:" *";color:var(--danger)}.segment{display:grid;grid-template-columns:1fr 1fr;margin-top:22px;border:1px solid var(--line)}.segment button{border:0;padding:13px;background:white;color:var(--muted)}.segment button+button{border-left:1px solid var(--line)}.segment button.active{background:var(--ink);color:white}.holding{margin-top:12px;color:var(--muted);font-size:13px;text-align:right}
     .subheading{display:flex;align-items:center;justify-content:space-between;gap:15px;margin:30px 0 16px;padding-top:24px;border-top:1px dashed var(--line)}.subheading h4{margin:0;font-size:15px}.subheading span{color:var(--green);font-weight:800;white-space:nowrap}.cost-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}.cost-grid .field input{height:44px;text-align:right}.subtotal{display:flex;justify-content:flex-end;gap:12px;margin-top:15px;padding:13px 15px;background:#f7f3ec;color:var(--muted);font-size:13px}.subtotal b{color:var(--green);font-size:15px}
     .compare{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;margin-top:23px;padding:18px;background:var(--paper)}.compare div{display:flex;flex-direction:column;gap:6px}.compare span{color:var(--muted);font-size:12px}.compare i{display:grid;width:40px;height:40px;place-items:center;border-radius:50%;background:var(--gold);color:#fff;font-size:11px;font-style:normal}.compare .chosen{grid-column:1/-1;display:block;padding-top:13px;border-top:1px solid #d2c8ba;color:var(--green);text-align:right}
-    .checks{display:grid;grid-template-columns:1fr 1fr;gap:10px}.checks label{display:flex;gap:9px;padding:13px;border:1px solid var(--line);font-size:13px;line-height:1.5;cursor:pointer}.checks input{width:17px;height:17px;accent-color:var(--green)}
+    .checks{display:grid;grid-template-columns:1fr 1fr;gap:10px}.checks label{display:flex;gap:9px;padding:13px;border:1px solid var(--line);font-size:13px;line-height:1.5;cursor:pointer}.checks input{width:17px;height:17px;accent-color:var(--green)}.checks label.locked{background:#f1eee8;color:#9b958c;cursor:not-allowed}.checks label.locked input{opacity:.45}.eligibility-hint{margin:0 0 16px}.involuntary-note{margin-top:18px;padding:16px 18px;border-left:3px solid var(--gold);background:#f7f3ec}.involuntary-note h4{margin:0 0 8px;font-size:13px}.involuntary-note ol{display:grid;grid-template-columns:1fr 1fr;gap:5px 24px;margin:0;padding-left:20px;color:var(--muted);font-size:10px;line-height:1.55}.involuntary-note .source{margin:9px 0 0;color:#8a8379;font-size:9px}
     .step-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:20px 42px;border-top:1px solid var(--line);background:#faf8f4}.step-actions .spacer{flex:1}.primary{border:0;border-radius:3px;padding:12px 24px;background:var(--green);color:white;font-weight:700}.primary:hover{background:#3b594a}.secondary{border:1px solid var(--line);border-radius:3px;padding:11px 20px;background:white;color:var(--ink)}.error{min-height:20px;margin:0;color:var(--danger);font-size:13px}
     .result-step{display:none;padding:0;background:var(--ink);color:white}.result-step.active{display:block}.result-wrap{padding:42px}.result-title{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}.result-title h2{margin:0;font-family:serif;font-size:42px}.result-title p{margin:8px 0 0;color:#bcb7af}.result-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}.tax,.profit{padding:25px;background:var(--gold);color:#211f1b}.profit{background:var(--green);color:white}.tax strong,.profit strong{display:block;margin:9px 0;font-family:Georgia,serif;font-size:clamp(34px,5vw,48px);overflow-wrap:anywhere}.tax small,.profit small{opacity:.78}.rows{display:grid;grid-template-columns:1fr 1fr;margin-top:20px;border-top:1px solid #ffffff20}.rows div{display:flex;justify-content:space-between;gap:15px;padding:15px;border-bottom:1px solid #ffffff20}.rows div:nth-child(odd){border-right:1px solid #ffffff20}.rows span{color:#bcb7af;font-size:13px}.rows b{text-align:right}
     .detail-panel{margin-top:30px;padding:24px;border:1px solid #ffffff24;background:#ffffff08}.detail-panel>h3{margin:0 0 18px;font-family:serif;font-size:25px}.detail-groups{display:grid;grid-template-columns:1fr 1fr;gap:14px}.detail-group{padding:18px;background:#ffffff0a}.detail-group h4{margin:0 0 12px;color:#e9c78f;font-size:15px}.detail-group dl{margin:0}.detail-group dl div{display:flex;justify-content:space-between;gap:14px;padding:8px 0;border-bottom:1px solid #ffffff15}.detail-group dl div:last-child{border-bottom:0}.detail-group dt{flex:0 0 auto;color:#bcb7af;font-size:12px}.detail-group dd{min-width:0;margin:0;text-align:right;font-size:13px;font-weight:700;overflow-wrap:anywhere}.detail-group.wide{grid-column:1/-1}.share-note{width:100%;margin:0;color:#aaa59d;font-size:11px}
@@ -33,9 +33,18 @@
     .team{display:grid;grid-template-columns:1.1fr .9fr;background:#ece7de}.team img{width:100%;height:100%;min-height:450px;object-fit:cover}.team>div{display:flex;flex-direction:column;justify-content:center;padding:clamp(45px,7vw,100px)}.team p{color:var(--muted);font-size:17px;line-height:1.9}.team b{color:var(--green);line-height:2}
     footer{display:flex;align-items:center;gap:12px;padding:25px clamp(20px,6vw,80px);background:var(--ink);color:white}footer img{width:44px;height:44px;border-radius:50%;object-fit:cover}footer small{margin-left:auto;color:#aaa59d}
     @media(max-width:760px){.hero{grid-template-columns:1fr;background:var(--paper)}.cost-grid{grid-template-columns:1fr 1fr}.result-grid,.detail-groups{grid-template-columns:1fr}.detail-group.wide{grid-column:auto}.result-title{display:block}.team{grid-template-columns:1fr}}
-    @media(max-width:620px){header{padding:9px 16px}.brand{min-width:0}.brand img{width:48px;height:48px;flex:0 0 auto}.brand b{font-size:16px}header>.muted{display:none}.hero{min-height:auto;padding:48px 16px;gap:30px;overflow:hidden}.hero h1{font-size:43px}.hero-copy>p{overflow-wrap:anywhere}.hero-card{width:100%;padding:27px 22px;box-shadow:0 15px 35px #0002}main{padding:50px 12px;overflow:hidden}.heading{align-items:flex-start;flex-direction:column}.heading h2{font-size:35px}.progress{grid-template-columns:repeat(5,minmax(0,1fr))}.progress div{min-width:0;padding:10px 2px;font-size:10px;line-height:1.3}.progress b{font-size:15px}.section{padding:28px 16px}.grid,.checks,.cost-grid{grid-template-columns:1fr}.field small{min-height:0}.subheading{align-items:flex-start}.subtotal{justify-content:space-between}.compare{grid-template-columns:1fr}.compare i{width:100%;height:28px;border-radius:3px}.compare .chosen{grid-column:1}.step-actions{padding:18px 16px;flex-wrap:wrap}.step-actions .error{width:100%;order:-1}.step-actions button{flex:1;white-space:nowrap}.result-wrap{padding:30px 14px}.result-title h2{font-size:36px}.tax strong,.profit strong{font-size:36px}.rows{grid-template-columns:1fr}.rows div:nth-child(odd){border-right:0}.detail-panel{padding:18px 12px}.detail-group{padding:15px 12px}.detail-group dl div{gap:8px}.result-actions{display:grid}.team img{min-height:260px}.team>div{padding:45px 20px}footer{align-items:flex-start;flex-wrap:wrap;padding:22px 16px}footer small{width:100%;margin-left:56px}}
+    @media(max-width:620px){header{padding:9px 16px}.brand{min-width:0}.brand img{width:48px;height:48px;flex:0 0 auto}.brand b{font-size:16px}header>.muted{display:none}.hero{min-height:auto;padding:48px 16px;gap:30px;overflow:hidden}.hero h1{font-size:43px}.hero-copy>p{overflow-wrap:anywhere}.hero-card{width:100%;padding:27px 22px;box-shadow:0 15px 35px #0002}main{padding:50px 12px;overflow:hidden}.heading{align-items:flex-start;flex-direction:column}.heading h2{font-size:35px}.progress{grid-template-columns:repeat(5,minmax(0,1fr))}.progress div{min-width:0;padding:10px 2px;font-size:10px;line-height:1.3}.progress b{font-size:15px}.section{padding:28px 16px}.grid,.checks,.cost-grid,.involuntary-note ol{grid-template-columns:1fr}.field small{min-height:0}.subheading{align-items:flex-start}.subtotal{justify-content:space-between}.compare{grid-template-columns:1fr}.compare i{width:100%;height:28px;border-radius:3px}.compare .chosen{grid-column:1}.step-actions{padding:18px 16px;flex-wrap:wrap}.step-actions .error{width:100%;order:-1}.step-actions button{flex:1;white-space:nowrap}.result-wrap{padding:30px 14px}.result-title h2{font-size:36px}.tax strong,.profit strong{font-size:36px}.rows{grid-template-columns:1fr}.rows div:nth-child(odd){border-right:0}.detail-panel{padding:18px 12px}.detail-group{padding:15px 12px}.detail-group dl div{gap:8px}.result-actions{display:grid}.team img{min-height:260px}.team>div{padding:45px 20px}footer{align-items:flex-start;flex-wrap:wrap;padding:22px 16px}footer small{width:100%;margin-left:56px}}
     @media print{
-      @page{size:A4;margin:14mm}body{background:white;color:#111}.no-print,header,.hero,.heading,.progress,.wizard>.step-card,.team,footer{display:none!important}main{max-width:none;padding:0}.wizard{border:0;overflow:visible}.wizard>.result-step{display:block!important;background:white;color:#111}.result-wrap{padding:0}.result-title p,.rows span,.detail-group dt,.notice{color:#555}.result-grid{break-inside:avoid}.tax,.profit{border:1px solid #bbb;background:white!important;color:#111}.rows{border-top:1px solid #bbb}.rows div{border-color:#ccc!important}.detail-panel{border-color:#bbb;background:white}.detail-groups{gap:8px}.detail-group{border:1px solid #ddd;background:white;break-inside:avoid}.detail-group h4{color:#333}.detail-group dl div{border-color:#ddd}.result-actions{display:none}.print-brand{display:flex!important;margin-bottom:25px;padding-bottom:15px;border-bottom:1px solid #bbb}
+      @page{size:A4 landscape;margin:7mm}
+      html,body{width:100%;height:auto;background:var(--ink)!important;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+      .no-print,header,.hero,.heading,.progress,.wizard>.step-card,.team,footer{display:none!important}
+      main{max-width:none;margin:0;padding:0}.wizard{border:0;background:var(--ink);overflow:visible}.wizard>.result-step{display:block!important;background:var(--ink)!important;color:white!important}
+      .result-wrap{padding:12px 18px}.print-brand{display:flex!important;margin-bottom:8px;padding-bottom:7px;border-bottom:1px solid #ffffff30}.print-brand img{width:34px;height:34px}.print-brand b{font-size:15px}.print-brand small{color:#c7c2ba;font-size:8px}
+      .result-title h2{font-size:25px}.result-title p{margin-top:2px;color:#c7c2ba;font-size:8px}.result-title .eyebrow{margin-bottom:3px;font-size:7px}
+      .result-grid{gap:8px;margin-top:8px;break-inside:avoid}.tax,.profit{padding:10px 16px}.tax strong,.profit strong{margin:2px 0;font-size:28px}.tax span,.profit span{font-size:9px}.tax small,.profit small{font-size:7px}
+      .rows{grid-template-columns:repeat(3,1fr);margin-top:7px;border-color:#ffffff28}.rows div,.rows div:nth-child(odd){padding:5px 9px;border-right:1px solid #ffffff20;border-color:#ffffff20}.rows span{color:#c7c2ba;font-size:7px}.rows b{font-size:8px}
+      .detail-panel{margin-top:8px;padding:8px 10px;border-color:#ffffff32;background:#ffffff08}.detail-panel>h3{margin-bottom:5px;font-size:14px}.detail-groups{grid-template-columns:1fr 1fr;gap:5px}.detail-group{padding:6px 9px;background:#ffffff0a;break-inside:avoid}.detail-group h4{margin-bottom:3px;color:#e9c78f;font-size:9px}.detail-group dl div{gap:6px;padding:1.5px 0;border-color:#ffffff16}.detail-group dt{color:#c7c2ba;font-size:6.5px}.detail-group dd{font-size:7px}
+      .notice{margin-top:5px;color:#aaa59d;font-size:6px;line-height:1.3}.result-actions{display:none!important}
     }
     .print-brand{display:none;align-items:center;gap:12px}.print-brand img{width:50px;height:50px;border-radius:50%;object-fit:cover}.print-brand b{display:block;font-family:serif;font-size:20px}.print-brand small{color:#555}
   </style>
@@ -85,11 +94,20 @@
       </section>
       <section class="step-card" data-step="4" id="benefits">
         <div class="section"><div class="step-head"><span class="step-number">04</span><div><h3>優惠資格確認</h3><p>勾選符合的條件；不確定時可先不勾選。</p></div></div>
-          <p class="muted">前四項皆符合且持有滿 6 年，才會自動套用 400 萬免稅額及 10% 稅率。</p><div class="checks">
+          <p id="eligibilityHint" class="muted eligibility-hint">系統會依持有期間自動開放適用的優惠資格。</p><div class="checks">
             <label><input id="registered" type="checkbox">本人、配偶或未成年子女設籍</label><label><input id="livedSix" type="checkbox">持有並實際居住連續滿 6 年</label>
             <label><input id="notRented" type="checkbox">交易前 6 年無出租或營業使用</label><label><input id="notUsed" type="checkbox">交易前 6 年未曾使用自住優惠</label>
             <label><input id="special" type="checkbox">符合非自願交易等法定 20% 特殊稅率</label>
           </div>
+          <div class="involuntary-note"><h4>非自願性交易七種情形摘要</h4><ol>
+            <li>因調職、非自願離職或職業災害終止勞動契約，須離開原工作地而出售當地自住房地。</li>
+            <li>出售取得土地前已遭他人越界建築部分的土地予房屋所有權人。</li>
+            <li>因無力清償債務（包括欠稅），房地依法遭強制執行移轉。</li>
+            <li>本人、配偶、雙方父母、未成年子女或無謀生能力成年子女罹患重大疾病或遭重大意外，出售房地負擔醫藥費。</li>
+            <li>依家庭暴力防治法取得通常保護令，為躲避相對人而出售自住房地。</li>
+            <li>共有房地因他共有人依土地法第 34 條之 1 未經同意出售，致交易本人應有部分。</li>
+            <li>繼承房地並承受該房地抵押貸款未償債務，因無足夠資力償還而出售。</li>
+          </ol><p class="source">依財政部 110 年 6 月 11 日台財稅字第 11004575360 號公告摘要；實際適用仍須符合各項法定要件。</p></div>
         </div>
         <div class="step-actions"><button class="secondary back" type="button" data-back="3">上一步</button><p class="error" data-error="4" aria-live="polite"></p><span class="spacer"></span><button id="calculate" class="primary" type="button">查看試算結果</button></div>
       </section>
@@ -128,7 +146,8 @@
     const acqIds=["buyDeedTax","buyStampTax","buyScrivener","buyFee","buyNotary","buyBroker","buyEscrow","buyOther"];
     const saleCostIds=["sellScrivener","sellNotary","sellEscrow","sellFee","sellMoving","sellCleaning","sellBroker","sellOther"];
     const numberIds=["salePrice","purchasePrice","improvement","landGain","landTax","priorLoss",...acqIds,...saleCostIds];
-    const checkIds=["registered","livedSix","notRented","notUsed","special"];
+    const selfUseIds=["registered","livedSix","notRented","notUsed"];
+    const checkIds=[...selfUseIds,"special"];
     const $=id=>document.getElementById(id);
     const n=id=>Math.max(0,Number($(id).value.replace(/\D/g,""))||0);
     const fmt=v=>new Intl.NumberFormat("zh-TW",{style:"currency",currency:"TWD",maximumFractionDigits:0}).format(v);
@@ -141,6 +160,15 @@
       const days=Math.floor((end-start)/86400000);
       return {days,years:days/365.2425};
     }
+    function updateEligibilityAvailability(){
+      const facts=dateFacts(),canSelfUse=resident===true&&facts&&facts.years>=6,canSpecial=resident===true&&facts&&facts.years<6;
+      selfUseIds.forEach(id=>{const box=$(id);box.disabled=!canSelfUse;if(!canSelfUse)box.checked=false;box.closest("label").classList.toggle("locked",!canSelfUse)});
+      $("special").disabled=!canSpecial;if(!canSpecial)$("special").checked=false;$("special").closest("label").classList.toggle("locked",!canSpecial);
+      if(resident===false)$("eligibilityHint").textContent="非境內居住者不適用本區優惠資格。";
+      else if(!facts)$("eligibilityHint").textContent="完成交易日期與身分後，系統會自動開放適用的選項。";
+      else if(facts.years<6)$("eligibilityHint").textContent="持有未滿 6 年，不適用自住房地優惠；前四項已鎖定，請僅確認是否符合非自願性交易。";
+      else $("eligibilityHint").textContent="持有已滿 6 年，可確認前四項自住房地條件；非自願性交易選項不適用。";
+    }
     function updateDraft(){
       const facts=dateFacts(),acquisition=acqIds.reduce((s,id)=>s+n(id),0),saleCosts=saleCostIds.reduce((s,id)=>s+n(id),0),hasSalePrice=$("salePrice").value!=="",estimate=hasSalePrice?Math.min(n("salePrice")*.03,300000):0;
       outs("years",facts?facts.years.toFixed(1)+" 年":"—");
@@ -150,6 +178,7 @@
       outs("actualCosts",saleCosts?fmt(saleCosts):"—");
       outs("estimatedCosts",hasSalePrice?fmt(estimate):"—");
       outs("deductibleCosts",hasSalePrice?fmt(Math.max(saleCosts,estimate)):"—");
+      updateEligibilityAvailability();
     }
     function updateResultDetails(){
       const set=(name,value)=>{const el=document.querySelector(`[data-detail="${name}"]`);if(el)el.textContent=value};
@@ -161,12 +190,12 @@
     }
     function calculate(){
       const facts=dateFacts(),acquisition=acqIds.reduce((s,id)=>s+n(id),0),saleCosts=saleCostIds.reduce((s,id)=>s+n(id),0);
-      const selfUse=resident===true&&["registered","livedSix","notRented","notUsed"].every(id=>$(id).checked)&&facts.years>=6;
+      const selfUse=resident===true&&selfUseIds.every(id=>$(id).checked)&&facts.years>=6;
       let rate=.45,reason="持有期間在 2 年以內";
       if(resident===false&&facts.years>2){rate=.35;reason="非境內居住者持有超過 2 年"}
       else if(resident===false){reason="非境內居住者持有 2 年以內"}
       else if(selfUse){rate=.1;reason="符合自住房地優惠"}
-      else if($("special").checked){rate=.2;reason="法定特殊交易 20% 稅率"}
+      else if($("special").checked&&facts.years<6){rate=.2;reason="法定特殊交易 20% 稅率"}
       else if(facts.years>10){rate=.15;reason="持有超過 10 年"}
       else if(facts.years>5){rate=.2;reason="持有超過 5 年、未逾 10 年"}
       else if(facts.years>2){rate=.35;reason="持有超過 2 年、未逾 5 年"}
@@ -201,6 +230,7 @@
       ["years","acquisitionTotal","saleCostTotal","actualCosts","estimatedCosts","deductibleCosts","exemption","taxable","tax","profit","rate","reason"].forEach(name=>outs(name,"—"));outs("days","");
       document.querySelectorAll("[data-detail]").forEach(el=>el.textContent="—");
       if(removeShare&&location.hash.startsWith("#share="))history.replaceState(null,"",location.pathname+location.search);
+      updateEligibilityAvailability();
       goStep(1);
     }
     function sharePayload(){
@@ -227,14 +257,15 @@
         $("resident").classList.toggle("active",resident);$("nonresident").classList.toggle("active",!resident);
         $("resident").setAttribute("aria-pressed",String(resident));$("nonresident").setAttribute("aria-pressed",String(!resident));
         $("benefits").style.display=resident?"":"none";
+        updateEligibilityAvailability();
         if(!dateFacts()||!$("salePrice").value||!$("purchasePrice").value)throw new Error("invalid");
         updateDraft();calculate();goStep(5);return true;
       }catch(error){history.replaceState(null,"",location.pathname+location.search);clearAll(false);return false}
     }
     numberIds.forEach(id=>$(id).addEventListener("input",e=>{e.target.value=e.target.value.replace(/\D/g,"");updateDraft()}));
     ["buyDate","saleDate"].forEach(id=>$(id).addEventListener("change",updateDraft));
-    $("resident").onclick=()=>{resident=true;$("resident").classList.add("active");$("nonresident").classList.remove("active");$("resident").setAttribute("aria-pressed","true");$("nonresident").setAttribute("aria-pressed","false");$("benefits").style.display=""};
-    $("nonresident").onclick=()=>{resident=false;$("nonresident").classList.add("active");$("resident").classList.remove("active");$("nonresident").setAttribute("aria-pressed","true");$("resident").setAttribute("aria-pressed","false");$("benefits").style.display="none"};
+    $("resident").onclick=()=>{resident=true;$("resident").classList.add("active");$("nonresident").classList.remove("active");$("resident").setAttribute("aria-pressed","true");$("nonresident").setAttribute("aria-pressed","false");$("benefits").style.display="";updateEligibilityAvailability()};
+    $("nonresident").onclick=()=>{resident=false;$("nonresident").classList.add("active");$("resident").classList.remove("active");$("nonresident").setAttribute("aria-pressed","true");$("resident").setAttribute("aria-pressed","false");$("benefits").style.display="none";updateEligibilityAvailability()};
     document.querySelectorAll(".next").forEach(btn=>btn.onclick=()=>{if(validate(currentStep))goStep(Number(btn.dataset.next))});
     document.querySelectorAll(".back").forEach(btn=>btn.onclick=()=>goStep(Number(btn.dataset.back)));
     $("calculate").onclick=()=>{if(validate(1)&&validate(2)){calculate();goStep(5)}};
